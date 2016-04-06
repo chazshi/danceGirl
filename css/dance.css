@@ -1,0 +1,53 @@
+.clearfix:after { /* 清除浮动  */
+	content: '';
+	display: block;
+	clear: both;
+}
+.danceCtrl {
+	width: 110px;
+	height: 155px;
+	/*background: #999;*/
+	position: absolute;
+	top: 120px;
+	right: 50%;
+	/*margin: 0 auto;*/
+	padding: 5px;
+}
+
+.dance {
+	position: relative;
+	width: 110px;
+	height: 128px;
+	/*background-image: url(../img/Dance.png);
+	background-repeat: no-repeat;
+	background-position: 0% 0%;  */
+	border: 1px solid #000;
+    border-style: dashed;
+    -webkit-box-shadow: 0 0 10px 8px black;
+    -moz-box-shadow: 0 0 10px 8px black;
+	box-shadow: 0 0 10px 8px black;
+}
+
+#danceSpeed {
+	display: block;
+}
+.ctrlWrapper {
+	margin-top: 5px;
+}
+.change, .status{
+	border-radius: 20px;
+	width: 50%;
+	float: left;
+}
+.change, .status ,#danceSpeed{
+	padding: 3px 0px;
+	background: #000;
+	text-align: center;
+	margin: 0px auto;
+	color: #fff;
+	font-weight: 700;
+}
+.change:active, .status:active {
+	opacity: 0.6;
+	background: #0f0;
+}
